@@ -10,4 +10,15 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="desc1">Get the best professionals in the business.</string>
+    <string name="heading1">Professionals</string>
+    <string name="desc2">Where you want your maid services</string>
+    <string name="heading2">Search by Location</string>
+    <string name="desc3">No holiday to domestic chores ever </string>
+    <string name="heading3">Easy replacement</string>
+    <string name="desc4">The best task force.</string>
+    <string name="heading4">Verified and Trained</string>
 </resources>

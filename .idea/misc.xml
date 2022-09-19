@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/background_image.xml" value="0.1375" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/background_image1.xml" value="0.1375" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/btn_background.xml" value="0.1375" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/btn_background1.xml" value="0.1375" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/foreground.xml" value="0.1375" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_onboarding_screens.xml" value="0.17074275362318841" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_sign_in.xml" value="0.17074275362318841" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_welcome_screen.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/fragment_onboard3.xml" value="0.17074275362318841" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/onboarding_layout.xml" value="0.1" />
         <entry key="..\:/MAjira/app/src/main/res/layout/content_main.xml" value="0.16" />
       </map>
     </option>
