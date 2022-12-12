@@ -88,7 +88,7 @@ public class OnboardingScreensActivity extends AppCompatActivity {
 
         }
 
-        dots[position].setTextColor(getResources().getColor(R.color.pink,getApplicationContext().getTheme()));
+        dots[position].setTextColor(getResources().getColor(R.color.blue,getApplicationContext().getTheme()));
     }
     ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
         @Override
