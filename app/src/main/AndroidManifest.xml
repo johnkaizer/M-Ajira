@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.project.m_ajira" >
+    package="com.project.m_ajira">
 
     <application
         android:allowBackup="true"
@@ -13,23 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MAjira"
         tools:replace="android:icon,android:theme"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".SignUpActivity"
+            android:name=".Authentication.SignUpActivity"
             android:exported="false"
             android:theme="@style/Theme.MAjira.NoActionBar" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".Authentication.SignInActivity"
             android:exported="false"
             android:theme="@style/Theme.MAjira.NoActionBar" />
         <activity
-            android:name=".OnboardingScreensActivity"
+            android:name=".Activities.OnboardingScreensActivity"
             android:exported="false"
             android:theme="@style/Theme.MAjira.NoActionBar" />
         <activity
-            android:name=".WelcomeScreenActivity"
+            android:name=".Activities.WelcomeScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.MAjira.NoActionBar" >
+            android:theme="@style/Theme.MAjira.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

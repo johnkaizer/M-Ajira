@@ -1,0 +1,9 @@
+
+~
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "root".(ö±îúÿÿÿÿ8óç»Ğ0
+f
+java:S1854"DRemove this useless assignment to local variable "galleryViewModel".(„÷Ä§ùÿÿÿÿ8‘ç»Ğ0
+U
+java:S1161":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ
+W
+java:S1481"5Remove this unused "galleryViewModel" local variable.(„÷Ä§ùÿÿÿÿ8¢‘ç»Ğ0

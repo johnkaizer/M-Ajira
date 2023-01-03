@@ -38,3 +38,11 @@ p
 @app/src/main/java/com/project/m_ajira/WelcomeScreenActivity.java,b\e\be844167f6c6c015b7963189af6d78574229d06b
 ~
 Napp/src/main/java/com/project/m_ajira/Adapters/OnBoardingViewPagerAdapter.java,e\b\eb8540f31868d212e1a1092ec8225cc7c86f310d
+u
+Eapp/src/main/java/com/project/m_ajira/ui/gallery/GalleryFragment.java,d\c\dc6aac249d9ea3178e077b8a4832ed24ab262979
+g
+7app/src/main/java/com/project/m_ajira/MainActivity.java,f\7\f794c276ff9754d5565aede10b3c486eaa87f4eb
+t
+Dapp/src/main/java/com/project/m_ajira/OnboardingScreensActivity.java,9\5\953cbb07de4100c07807d4ef99eed530939f23d2
+i
+9app/src/main/java/com/project/m_ajira/SignUpActivity.java,d\4\d492c4aa61ace84deca9920138c32f7b537fcb93

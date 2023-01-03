@@ -1,4 +1,4 @@
-package com.project.m_ajira;
+package com.project.m_ajira.Authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.project.m_ajira.ui.home.HomeFragment;
+import com.project.m_ajira.MainActivity;
+import com.project.m_ajira.R;
 
 public class SignInActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     public void register(View view) {
-        Intent i = new Intent(SignInActivity.this,SignUpActivity.class);
+        Intent i = new Intent(SignInActivity.this, SignUpActivity.class);
         startActivity(i);
         finish();
     }

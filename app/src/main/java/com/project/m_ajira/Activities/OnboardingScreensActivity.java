@@ -1,4 +1,4 @@
-package com.project.m_ajira;
+package com.project.m_ajira.Activities;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.project.m_ajira.Adapters.OnBoardingViewPagerAdapter;
+import com.project.m_ajira.Authentication.SignInActivity;
+import com.project.m_ajira.R;
 
 public class OnboardingScreensActivity extends AppCompatActivity {
     ViewPager mOnBoardingViewPagerAdapter;
@@ -35,7 +37,7 @@ public class OnboardingScreensActivity extends AppCompatActivity {
         skipbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(OnboardingScreensActivity.this,SignInActivity.class);
+                Intent i = new Intent(OnboardingScreensActivity.this, SignInActivity.class);
                 startActivity(i);
                 finish();
 

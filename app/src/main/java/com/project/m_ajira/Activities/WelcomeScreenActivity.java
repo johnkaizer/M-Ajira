@@ -1,10 +1,12 @@
-package com.project.m_ajira;
+package com.project.m_ajira.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.project.m_ajira.R;
 
 public class WelcomeScreenActivity extends AppCompatActivity {
 
@@ -15,7 +17,7 @@ public class WelcomeScreenActivity extends AppCompatActivity {
     }
 
     public void Next(View view) {
-        Intent i = new Intent(WelcomeScreenActivity.this,OnboardingScreensActivity.class);
+        Intent i = new Intent(WelcomeScreenActivity.this, OnboardingScreensActivity.class);
         startActivity(i);
         finish();
 
