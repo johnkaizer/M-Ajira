@@ -1,0 +1,2 @@
+# M-Ajira
+It’s becoming increasingly challenging to find reliable and trustworthy individuals to care for your house and compound chores. Therefore, an efficient system is crucial for saving people time and allow individuals to look for employment in the house managing field as well as allow people to easily find employees at the comfort of their homes without travelling long distances looking for employees who are not qualified and end up with questionable characters.
