@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "27685756038",
+    "project_id": "m-ajira",
+    "storage_bucket": "m-ajira.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27685756038:android:f07c0129c45b072acac507",
+        "android_client_info": {
+          "package_name": "com.project.m_ajira"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27685756038-noaug187043v9lr743jgiu6iop59140f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqzZQppvO89w_4HMaRtH_1XpWpd8mRF68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27685756038-noaug187043v9lr743jgiu6iop59140f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

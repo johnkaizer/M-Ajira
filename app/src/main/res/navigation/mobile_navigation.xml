@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.project.m_ajira.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_messages"
+        android:name="com.project.m_ajira.ui.messages.MessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_messages" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.project.m_ajira.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_bookings"
+        android:name="com.project.m_ajira.ui.bookings.BookingsFragment"
+        android:label="Bookings"
+        tools:layout="@layout/fragment_bookings" />
 </navigation>

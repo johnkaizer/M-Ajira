@@ -9,8 +9,11 @@
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/btn_background.xml" value="0.1375" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/btn_background1.xml" value="0.1375" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable-v24/foreground.xml" value="0.1375" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable/add_task_24.xml" value="0.1715" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable/background_image.xml" value="0.2115" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable/background_image1.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable/round.xml" value="0.1715" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/drawable/white_box.xml" value="0.1715" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_forgot_password.xml" value="0.15579710144927536" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_main.xml" value="0.15625" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_onboarding_screens.xml" value="0.17074275362318841" />
@@ -18,9 +21,14 @@
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/activity_welcome_screen.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/app_bar_main.xml" value="0.15625" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/content_main.xml" value="0.17255434782608695" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/dialog_forgot.xml" value="0.17527173913043478" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/fragment_gallery.xml" value="0.15625" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/fragment_onboard3.xml" value="0.17074275362318841" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/nav_header_main.xml" value="0.17255434782608695" />
         <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/layout/onboarding_layout.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/menu/activity_main_drawer.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/MAjira/app/src/main/res/menu/main.xml" value="0.2" />
         <entry key="..\:/MAjira/app/src/main/res/layout/content_main.xml" value="0.16" />
       </map>
     </option>

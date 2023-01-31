@@ -1,6 +1,4 @@
 
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -8,8 +6,6 @@
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
 X
@@ -30,19 +26,17 @@ o
 ?app/src/main/java/com/project/m_ajira/ui/home/HomeFragment.java,0\8\08fedbac1d5347d03145381bd2cf89036d1526da
 p
 @app/src/main/java/com/project/m_ajira/ui/home/HomeViewModel.java,b\a\bab36e3d04f05545ee9097505c4c85a164455ece
-y
-Iapp/src/main/java/com/project/m_ajira/ui/slideshow/SlideshowFragment.java,1\a\1ad1b265b1f1aa5ff09888c2a1a27609cece633e
 z
 Japp/src/main/java/com/project/m_ajira/ui/slideshow/SlideshowViewModel.java,c\b\cbfdf452de1ae3456231655ea5cb486cc580cff2
-p
-@app/src/main/java/com/project/m_ajira/WelcomeScreenActivity.java,b\e\be844167f6c6c015b7963189af6d78574229d06b
 ~
 Napp/src/main/java/com/project/m_ajira/Adapters/OnBoardingViewPagerAdapter.java,e\b\eb8540f31868d212e1a1092ec8225cc7c86f310d
 u
 Eapp/src/main/java/com/project/m_ajira/ui/gallery/GalleryFragment.java,d\c\dc6aac249d9ea3178e077b8a4832ed24ab262979
 g
 7app/src/main/java/com/project/m_ajira/MainActivity.java,f\7\f794c276ff9754d5565aede10b3c486eaa87f4eb
-t
-Dapp/src/main/java/com/project/m_ajira/OnboardingScreensActivity.java,9\5\953cbb07de4100c07807d4ef99eed530939f23d2
-i
-9app/src/main/java/com/project/m_ajira/SignUpActivity.java,d\4\d492c4aa61ace84deca9920138c32f7b537fcb93
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+{
+Kapp/src/main/java/com/project/m_ajira/Activities/WelcomeScreenActivity.java,8\d\8d58ab267ab31ecef4c679e7e335672ae7e84aef
+
+Oapp/src/main/java/com/project/m_ajira/Activities/OnboardingScreensActivity.java,c\0\c003a502db27350d71c3f78ad23582802896c6a9

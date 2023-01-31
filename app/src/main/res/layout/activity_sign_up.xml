@@ -47,7 +47,7 @@
         android:drawablePadding="14dp"
         android:hint="name"
         android:minHeight="48dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textColorHint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,14 +91,15 @@
         android:id="@+id/editText5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/blue"
         android:drawableLeft="@drawable/lock_24"
-        android:layout_marginTop="10dp"
         android:drawablePadding="14dp"
-        android:hint="pass"
+        android:hint="password"
+        android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColorHint="@color/grey"
         android:textColor="@color/black"
+        android:textColorHint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText4"
@@ -176,5 +177,16 @@
             android:layout_weight="1"
             android:src="@drawable/google" />
     </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
