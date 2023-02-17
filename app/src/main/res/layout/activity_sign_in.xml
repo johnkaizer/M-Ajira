@@ -8,11 +8,13 @@
     tools:context=".Authentication.SignInActivity"
     android:background="@color/white"
     android:orientation="vertical">
+
   <TextView
       android:id="@+id/textView3"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="40dp"
+      android:fontFamily="@font/jomolhari"
       android:gravity="center"
       android:text="LOGIN"
       android:textColor="@color/black"
@@ -26,12 +28,12 @@
       android:id="@+id/text1"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:fontFamily="@font/jomolhari"
+      android:gravity="center"
       android:text="we are happy to see you again"
       android:textColor="@color/blue"
-      android:fontFamily="@font/amita_bold"
       android:textSize="25sp"
       android:textStyle="bold"
-      android:gravity="center"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -78,6 +80,7 @@
         android:drawableTint="@color/white"
         android:hint="Enter password"
         android:minHeight="48dp"
+        android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,10 +132,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Register now"
+        android:fontFamily="@font/jomolhari"
+
         android:onClick="register"
+        android:text="Register now"
+        android:textColor="@android:color/holo_orange_light"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5" />

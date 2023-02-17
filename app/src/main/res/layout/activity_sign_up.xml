@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:fontFamily="@font/jomolhari"
         android:gravity="center"
         android:text="Register Yourself"
         android:textColor="@color/black"
@@ -27,12 +28,12 @@
         android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/jomolhari"
         android:gravity="center"
         android:text="we are happy to see you"
         android:textColor="@color/blue"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:fontFamily="@font/amita_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -127,6 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/jomolhari"
         android:gravity="center"
         android:text="Or sign in with"
         android:textColor="@color/black"
@@ -154,14 +156,12 @@
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="126dp"
+        android:layout_marginBottom="40dp"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/or">
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <ImageView
