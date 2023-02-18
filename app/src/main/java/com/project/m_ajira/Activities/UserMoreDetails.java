@@ -1,14 +1,16 @@
-package com.project.m_ajira;
+package com.project.m_ajira.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EnterMoreDetails extends AppCompatActivity {
+import com.project.m_ajira.R;
+
+public class UserMoreDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enter_more_details);
+        setContentView(R.layout.activity_user_more_details);
     }
 }

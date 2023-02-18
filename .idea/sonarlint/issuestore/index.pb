@@ -2,8 +2,6 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-?
-settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 >
@@ -34,9 +32,9 @@ w
 Gapp/src/main/java/com/project/m_ajira/ui/bookings/BookingsFragment.java,7\0\70ac036bf91cdeb1a1d940688cda6fd54f9d472c
 w
 Gapp/src/main/java/com/project/m_ajira/ui/messages/MessagesFragment.java,e\0\e06bd99d73aa5a5cb682bebdc221ed04071d2f77
-x
-Happ/src/main/java/com/project/m_ajira/Authentication/SignUpActivity.java,e\9\e9bc9764f892f0b2015c323f9011f5dc4eb448a4
 e
 5app/src/main/java/com/project/m_ajira/Model/User.java,b\9\b9ddf77f2c15b8cf66df4b75342b397aa8f756b6
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+w
+G.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35,b\f\bfb9453d49af9bc40f5f7a5f034be3c7ef8fa6bf
+o
+?app/src/main/java/com/project/m_ajira/ui/home/HomeFragment.java,0\8\08fedbac1d5347d03145381bd2cf89036d1526da

@@ -1,4 +1,4 @@
-package com.project.m_ajira;
+package com.project.m_ajira.Activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +14,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.project.m_ajira.R;
 import com.project.m_ajira.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

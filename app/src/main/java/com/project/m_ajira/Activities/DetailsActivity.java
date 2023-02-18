@@ -1,8 +1,10 @@
-package com.project.m_ajira;
+package com.project.m_ajira.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.project.m_ajira.R;
 
 public class DetailsActivity extends AppCompatActivity {
 

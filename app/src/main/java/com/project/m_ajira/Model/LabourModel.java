@@ -1,7 +1,6 @@
 package com.project.m_ajira.Model;
 
 public class LabourModel {
-    String icon;
     String description;
     String briefDesc;
     String rate;
@@ -16,8 +15,7 @@ public class LabourModel {
     }
 
     //Constructor
-    public LabourModel(String icon, String description, String briefDesc, String rate, String owner, String ownerPhone, String ownerId, String place, String dateCreated) {
-        this.icon = icon;
+    public LabourModel( String description, String briefDesc, String rate, String owner, String ownerPhone, String ownerId, String place, String dateCreated) {
         this.description = description;
         this.briefDesc = briefDesc;
         this.rate = rate;
@@ -28,14 +26,6 @@ public class LabourModel {
         this.dateCreated = dateCreated;
     }
     //getters and setters methods
-    public String getIcon() {
-        return icon;
-    }
-
-    public void setIcon(String icon) {
-        this.icon = icon;
-    }
-
     public String getDescription() {
         return description;
     }

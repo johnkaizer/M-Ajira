@@ -16,7 +16,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
-import com.project.m_ajira.MainActivity;
 import com.project.m_ajira.Model.User;
 import com.project.m_ajira.R;
 

@@ -2,8 +2,8 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
-    android:layout_height="200dp"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
     android:layout_margin="5dp"
     android:padding="5dp"
     app:cardBackgroundColor="@color/white"
@@ -17,15 +17,15 @@
         <ImageView
             android:id="@+id/labour_icon"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="90dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/clean"
+            android:src="@drawable/person_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/desc_txt"
+            android:id="@+id/speciality_txt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:fontFamily="@font/jomolhari"
@@ -46,8 +46,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/desc_txt" />
-
+            app:layout_constraintTop_toBottomOf="@+id/speciality_txt" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
