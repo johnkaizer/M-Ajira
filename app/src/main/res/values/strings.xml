@@ -21,4 +21,29 @@
     <string name="heading3">Easy replacement</string>
     <string name="desc4">The best task force.</string>
     <string name="heading4">Verified and Trained</string>
+    //Jobs titles
+    <string-array name="jobs">
+        <item>House cleaner</item>
+        <item>Baby seater</item>
+        <item>Watchman</item>
+        <item>Grounds Man</item>
+        <item>Cow Shepherd</item>
+        <item>Pet Groomer</item>
+        <item>Caretaker</item>
+    </string-array>
+    //Gender
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    /Skills
+    <string-array name="skills">
+        <item>House cleaner</item>
+        <item>Baby seater</item>
+        <item>Watchman</item>
+        <item>Grounds Man</item>
+        <item>Cow Shepherd</item>
+        <item>Pet Groomer</item>
+        <item>Caretaker</item>
+    </string-array>
 </resources>

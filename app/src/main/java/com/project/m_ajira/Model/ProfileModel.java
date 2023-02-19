@@ -12,11 +12,13 @@ public class ProfileModel {
     String HighEducation;
     String speciality;
     String rates;
+    String userId;
 
     public ProfileModel() {
     }
 
-    public ProfileModel(String imageUrl, String fullName, String dob, String phone, String email, String home, String currentHome, String gender, String highEducation, String speciality, String rates) {
+
+    public ProfileModel(String imageUrl, String fullName, String dob, String phone, String email, String home, String currentHome, String gender, String highEducation, String speciality, String rates, String userId) {
         ImageUrl = imageUrl;
         this.fullName = fullName;
         Dob = dob;
@@ -28,6 +30,7 @@ public class ProfileModel {
         HighEducation = highEducation;
         this.speciality = speciality;
         this.rates = rates;
+        this.userId = userId;
     }
 
     public String getImageUrl() {

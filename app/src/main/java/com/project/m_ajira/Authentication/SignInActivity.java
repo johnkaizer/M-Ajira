@@ -40,7 +40,7 @@ public class SignInActivity extends AppCompatActivity {
 
         EditTextEmail = findViewById(R.id.editText2);
         EditTextPassword = findViewById(R.id.editText3);
-        progressBar = findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar2);
         // Hiding password and showing
         EditTextPassword.setOnTouchListener(new View.OnTouchListener() {
             @Override

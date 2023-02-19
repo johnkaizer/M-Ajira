@@ -33,7 +33,7 @@ public class SignUpActivity extends AppCompatActivity {
         editTextEmail = findViewById(R.id.editText3);
         editTextPhone = findViewById(R.id.editText4);
         editTextPassword = findViewById(R.id.editText5);
-        progressBar = findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar2);
 
         mAuth = FirebaseAuth.getInstance();
     }

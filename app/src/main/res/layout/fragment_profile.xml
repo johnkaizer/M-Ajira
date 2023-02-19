@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,6 +8,9 @@
     tools:context=".ui.profile.Profile"
     android:background="@color/white"
     android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/textView11"
@@ -21,41 +25,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <ProgressBar
-        android:id="@+id/progressbar1"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <ImageView
         android:id="@+id/imageV"
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_marginTop="5dp"
-        android:src="@drawable/image_24"
-        app:layout_constraintEnd_toEndOf="@+id/progressbar1"
-        app:layout_constraintStart_toStartOf="@+id/progressbar1"
-        app:layout_constraintTop_toBottomOf="@+id/progressbar1" />
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@id/uploadBtn"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_background1"
-        android:text="Upload Pic"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageV"
-        app:layout_constraintStart_toStartOf="@+id/imageV"
-        app:layout_constraintTop_toBottomOf="@+id/imageV" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@id/uploadBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_background1"
+            android:text="Upload an Image"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageV"
+            app:layout_constraintStart_toStartOf="@+id/imageV"
+            app:layout_constraintTop_toBottomOf="@+id/imageV" />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
@@ -69,10 +62,11 @@
         app:layout_constraintTop_toBottomOf="@+id/uploadBtn">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/stud_name"
+            android:id="@+id/full_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="name e.g Kenya Mpya"
+            android:hint="Enter name e.g Mambo "
+            android:background="@drawable/edit_background"
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -90,11 +84,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/student_age"
+            android:id="@+id/dob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter age eg 15"
-            android:inputType="number"
+            android:hint="Enter DOB eg 5/20/2020"
+            android:background="@drawable/edit_background"
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -112,11 +106,55 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/student_email"
+            android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint=" Enter email"
+            android:hint=" Enter phone number"
+            android:background="@drawable/edit_background"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:background="@drawable/edit_background"
             android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/home_town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your home town"
+            android:background="@drawable/edit_background"
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -130,16 +168,28 @@
         app:boxBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/student_school"
+            android:id="@+id/current"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your School"
+            android:hint="Enter current home"
+            android:background="@drawable/edit_background"
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
     </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@id/gender_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:text="Select your gender below"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout6"
         android:layout_width="0dp"
@@ -150,29 +200,13 @@
         app:boxBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/student_fees"
+        android:background="@drawable/edit_background"
+        app:layout_constraintTop_toBottomOf="@+id/gender_txt">
+        <Spinner
+            android:id="@+id/gender_spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter your total fees a year"
-            android:inputType="number"
-            android:textColor="@color/black"
-            android:textColorHint="@color/grey" />
+            android:layout_height="50dp" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@id/parent"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Parents working?"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout7"
         android:layout_width="0dp"
@@ -183,24 +217,28 @@
         app:boxBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/parent">
-        <Spinner
-            android:id="@+id/parent_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter highest education level"
+            android:background="@drawable/edit_background"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+    </com.google.android.material.textfield.TextInputLayout>
     <TextView
-        android:id="@id/orphan"
+        android:id="@id/speciality_txt"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Are you an Orphan?"
+        android:textColor="@color/black"
+        android:text="Select your area of speciality"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout8"
         android:layout_width="0dp"
@@ -211,9 +249,10 @@
         app:boxBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orphan">
+        android:background="@drawable/edit_background"
+        app:layout_constraintTop_toBottomOf="@+id/speciality_txt">
         <Spinner
-            android:id="@+id/orphan_spinner"
+            android:id="@+id/skills_spinner"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -230,39 +269,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/student_siblings"
+            android:id="@+id/rates"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Any siblings? If yes indicate number else O"
-            android:inputType="number"
+            android:hint="Enter your rates per hour eg Ksh 100/hr"
+            android:background="@drawable/edit_background"
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <TextView
-        android:id="@id/disability"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Do you have any disabilities?"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout10"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:boxBackgroundColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/disability">
-        <Spinner
-            android:id="@+id/disability_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -274,12 +287,24 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
         android:text="Submit"
+        android:background="@drawable/btn_background1"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
