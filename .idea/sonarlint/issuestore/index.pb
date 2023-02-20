@@ -36,5 +36,3 @@ e
 5app/src/main/java/com/project/m_ajira/Model/User.java,b\9\b9ddf77f2c15b8cf66df4b75342b397aa8f756b6
 w
 G.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35,b\f\bfb9453d49af9bc40f5f7a5f034be3c7ef8fa6bf
-o
-?app/src/main/java/com/project/m_ajira/ui/home/HomeFragment.java,0\8\08fedbac1d5347d03145381bd2cf89036d1526da
