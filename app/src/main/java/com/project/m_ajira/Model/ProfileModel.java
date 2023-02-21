@@ -10,15 +10,14 @@ public class ProfileModel {
     String currentHome;
     String gender;
     String HighEducation;
-    String speciality;
-    String rates;
+    String Skill;
+    String Fee;
     String userId;
 
     public ProfileModel() {
     }
 
-
-    public ProfileModel(String imageUrl, String fullName, String dob, String phone, String email, String home, String currentHome, String gender, String highEducation, String speciality, String rates, String userId) {
+    public ProfileModel(String imageUrl, String fullName, String dob, String phone, String email, String home, String currentHome, String gender, String highEducation, String skill, String fee, String userId) {
         ImageUrl = imageUrl;
         this.fullName = fullName;
         Dob = dob;
@@ -28,8 +27,8 @@ public class ProfileModel {
         this.currentHome = currentHome;
         this.gender = gender;
         HighEducation = highEducation;
-        this.speciality = speciality;
-        this.rates = rates;
+        Skill = skill;
+        Fee = fee;
         this.userId = userId;
     }
 
@@ -105,19 +104,27 @@ public class ProfileModel {
         HighEducation = highEducation;
     }
 
-    public String getSpeciality() {
-        return speciality;
+    public String getSkill() {
+        return Skill;
     }
 
-    public void setSpeciality(String speciality) {
-        this.speciality = speciality;
+    public void setSkill(String skill) {
+        Skill = skill;
     }
 
-    public String getRates() {
-        return rates;
+    public String getFee() {
+        return Fee;
     }
 
-    public void setRates(String rates) {
-        this.rates = rates;
+    public void setFee(String fee) {
+        Fee = fee;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }

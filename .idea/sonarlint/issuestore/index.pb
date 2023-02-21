@@ -22,8 +22,6 @@ j
 Napp/src/main/java/com/project/m_ajira/Adapters/OnBoardingViewPagerAdapter.java,e\b\eb8540f31868d212e1a1092ec8225cc7c86f310d
 {
 Kapp/src/main/java/com/project/m_ajira/Activities/WelcomeScreenActivity.java,8\d\8d58ab267ab31ecef4c679e7e335672ae7e84aef
-
-Oapp/src/main/java/com/project/m_ajira/Activities/OnboardingScreensActivity.java,c\0\c003a502db27350d71c3f78ad23582802896c6a9
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 H

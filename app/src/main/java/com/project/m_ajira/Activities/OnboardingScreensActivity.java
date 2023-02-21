@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
@@ -33,6 +34,20 @@ public class OnboardingScreensActivity extends AppCompatActivity {
         skipbtn = findViewById(R.id.skip_btn);
         backbtn = findViewById(R.id.back_btn);
         nextbtn = findViewById(R.id.next_btn);
+        SharedPreferences preference= getSharedPreferences("PREFERENCE",MODE_PRIVATE);
+        String FirstTime= preference.getString("FirstTimeInstall","");
+        if (FirstTime.equals("Yes")){
+            Intent intent=new Intent( OnboardingScreensActivity.this, SignInActivity.class);
+            startActivity(intent);
+            finish();
+
+        }else {
+            SharedPreferences.Editor editor= preference.edit();
+            editor.putString("FirstTimeInstall","Yes");
+            editor.apply();
+
+
+        }
 
         skipbtn.setOnClickListener(new View.OnClickListener() {
             @Override

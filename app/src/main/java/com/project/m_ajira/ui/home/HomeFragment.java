@@ -15,13 +15,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 import com.project.m_ajira.Adapters.LabourAdapter;
+import com.project.m_ajira.Adapters.UsersAdapter;
 import com.project.m_ajira.Model.LabourModel;
+import com.project.m_ajira.Model.ProfileModel;
 import com.project.m_ajira.R;
 import com.project.m_ajira.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
     LabourAdapter labourAdapter;
-    RecyclerView labourRv;
+    UsersAdapter usersAdapter;
+    RecyclerView labourRv, usersRv;
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -42,6 +45,20 @@ public class HomeFragment extends Fragment {
 
         labourAdapter = new LabourAdapter(context,getContext());
         labourRv.setAdapter(labourAdapter);
+        //
+        usersRv= root.findViewById(R.id.usersRv);
+        LinearLayoutManager layoutManager1 =new LinearLayoutManager(getContext());
+        layoutManager1.setReverseLayout(true);
+        layoutManager1.getStackFromEnd();
+        usersRv.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false));
+        usersRv.setLayoutManager(layoutManager1);
+
+        FirebaseRecyclerOptions<ProfileModel> profile = new FirebaseRecyclerOptions.Builder<ProfileModel>()
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("Users"),ProfileModel.class)
+                .build();
+
+        usersAdapter = new UsersAdapter(profile,getContext());
+        usersRv.setAdapter(usersAdapter);
 
 
         return root;
@@ -56,10 +73,13 @@ public class HomeFragment extends Fragment {
     public void onStart() {
         super.onStart();
         labourAdapter.startListening();
+        usersAdapter.startListening();
     }
     @Override
     public void onStop() {
         super.onStop();
         labourAdapter.stopListening();
+        usersAdapter.stopListening();
     }
+
 }
