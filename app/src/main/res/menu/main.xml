@@ -9,7 +9,7 @@
     <item
         android:id="@+id/action_notifications"
         android:orderInCategory="100"
-        android:title="Notification"
+        android:title="Manage Posts"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_about"

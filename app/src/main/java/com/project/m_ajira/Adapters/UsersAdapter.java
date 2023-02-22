@@ -25,9 +25,9 @@ public class UsersAdapter extends FirebaseRecyclerAdapter<ProfileModel,UsersAdap
     protected void onBindViewHolder(@NonNull ViewHolder holder, int i, @NonNull ProfileModel model) {
         getRef(i).getKey();
         holder.skill.setText(model.getSkill());
-        holder.rates.setText(model.getFee());
-        holder.name.setText(model.getFullName());
-        holder.phone.setText(model.getPhone());
+        holder.rates.setText(model.getUserRates());
+        holder.name.setText(model.getUserName());
+        holder.phone.setText(model.getUserPhone());
         holder.location.setText(model.getCurrentHome());
         Picasso.get().load(model.getImageUrl()).into(holder.image);
 

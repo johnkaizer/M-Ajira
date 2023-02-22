@@ -2,33 +2,33 @@ package com.project.m_ajira.Model;
 
 public class ProfileModel {
     String ImageUrl;
-    String fullName;
-    String Dob;
-    String phone;
-    String email;
-    String home;
-    String currentHome;
-    String gender;
-    String HighEducation;
+    String UserName;
+    String UserDob;
+    String UserPhone;
+    String UserEmail;
+    String UserHome;
+    String CurrentHome;
+    String Gender;
+    String Education;
     String Skill;
-    String Fee;
+    String UserRates;
     String userId;
 
     public ProfileModel() {
     }
 
-    public ProfileModel(String imageUrl, String fullName, String dob, String phone, String email, String home, String currentHome, String gender, String highEducation, String skill, String fee, String userId) {
+    public ProfileModel(String imageUrl, String userName, String userDob, String userPhone, String userEmail, String userHome, String currentHome, String gender, String education, String skill, String userRates, String userId) {
         ImageUrl = imageUrl;
-        this.fullName = fullName;
-        Dob = dob;
-        this.phone = phone;
-        this.email = email;
-        this.home = home;
-        this.currentHome = currentHome;
-        this.gender = gender;
-        HighEducation = highEducation;
+        UserName = userName;
+        UserDob = userDob;
+        UserPhone = userPhone;
+        UserEmail = userEmail;
+        UserHome = userHome;
+        CurrentHome = currentHome;
+        Gender = gender;
+        Education = education;
         Skill = skill;
-        Fee = fee;
+        UserRates = userRates;
         this.userId = userId;
     }
 
@@ -40,68 +40,68 @@ public class ProfileModel {
         ImageUrl = imageUrl;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getUserName() {
+        return UserName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setUserName(String userName) {
+        UserName = userName;
     }
 
-    public String getDob() {
-        return Dob;
+    public String getUserDob() {
+        return UserDob;
     }
 
-    public void setDob(String dob) {
-        Dob = dob;
+    public void setUserDob(String userDob) {
+        UserDob = userDob;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getUserPhone() {
+        return UserPhone;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setUserPhone(String userPhone) {
+        UserPhone = userPhone;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUserEmail() {
+        return UserEmail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUserEmail(String userEmail) {
+        UserEmail = userEmail;
     }
 
-    public String getHome() {
-        return home;
+    public String getUserHome() {
+        return UserHome;
     }
 
-    public void setHome(String home) {
-        this.home = home;
+    public void setUserHome(String userHome) {
+        UserHome = userHome;
     }
 
     public String getCurrentHome() {
-        return currentHome;
+        return CurrentHome;
     }
 
     public void setCurrentHome(String currentHome) {
-        this.currentHome = currentHome;
+        CurrentHome = currentHome;
     }
 
     public String getGender() {
-        return gender;
+        return Gender;
     }
 
     public void setGender(String gender) {
-        this.gender = gender;
+        Gender = gender;
     }
 
-    public String getHighEducation() {
-        return HighEducation;
+    public String getEducation() {
+        return Education;
     }
 
-    public void setHighEducation(String highEducation) {
-        HighEducation = highEducation;
+    public void setEducation(String education) {
+        Education = education;
     }
 
     public String getSkill() {
@@ -112,12 +112,12 @@ public class ProfileModel {
         Skill = skill;
     }
 
-    public String getFee() {
-        return Fee;
+    public String getUserRates() {
+        return UserRates;
     }
 
-    public void setFee(String fee) {
-        Fee = fee;
+    public void setUserRates(String userRates) {
+        UserRates = userRates;
     }
 
     public String getUserId() {

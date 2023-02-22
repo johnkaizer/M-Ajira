@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,7 @@ public class HomeFragment extends Fragment {
     UsersAdapter usersAdapter;
     RecyclerView labourRv, usersRv;
     private FragmentHomeBinding binding;
+    ProgressBar progressBar;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,9 +35,9 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         labourRv= root.findViewById(R.id.labourRv);
+        progressBar=root.findViewById(R.id.progressBar2);
         LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
         layoutManager.setReverseLayout(true);
-        layoutManager.getStackFromEnd();
         labourRv.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
         labourRv.setLayoutManager(layoutManager);
 
@@ -45,16 +47,16 @@ public class HomeFragment extends Fragment {
 
         labourAdapter = new LabourAdapter(context,getContext());
         labourRv.setAdapter(labourAdapter);
-        //
+
+        //Users Profile
         usersRv= root.findViewById(R.id.usersRv);
         LinearLayoutManager layoutManager1 =new LinearLayoutManager(getContext());
         layoutManager1.setReverseLayout(true);
-        layoutManager1.getStackFromEnd();
         usersRv.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false));
         usersRv.setLayoutManager(layoutManager1);
 
         FirebaseRecyclerOptions<ProfileModel> profile = new FirebaseRecyclerOptions.Builder<ProfileModel>()
-                .setQuery(FirebaseDatabase.getInstance().getReference().child("Users"),ProfileModel.class)
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("UserProfiles"),ProfileModel.class)
                 .build();
 
         usersAdapter = new UsersAdapter(profile,getContext());
@@ -74,6 +76,9 @@ public class HomeFragment extends Fragment {
         super.onStart();
         labourAdapter.startListening();
         usersAdapter.startListening();
+        if (progressBar !=null){
+            progressBar.setVisibility(View.GONE);
+        }
     }
     @Override
     public void onStop() {
@@ -81,5 +86,6 @@ public class HomeFragment extends Fragment {
         labourAdapter.stopListening();
         usersAdapter.stopListening();
     }
+
 
 }
