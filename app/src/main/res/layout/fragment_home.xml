@@ -28,7 +28,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/labourRv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="210dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:visibility="gone"
@@ -37,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
         <com.facebook.shimmer.ShimmerFrameLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="210dp"
             android:id="@+id/shimmer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +61,7 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
             android:fontFamily="@font/jomolhari"
             android:gravity="center_horizontal"
             android:text="Labourers"
@@ -68,7 +69,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shimmer" />
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/usersRv"
@@ -76,20 +77,31 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
-        <ProgressBar
-            android:id="@+id/progressBar2"
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="wrap_content"
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/shimmer1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/labourer_item_shimmer">
+
+                </include>
+                <include layout="@layout/labourer_item_shimmer">
+
+                </include>
+                <include layout="@layout/labourer_item_shimmer">
+                </include>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

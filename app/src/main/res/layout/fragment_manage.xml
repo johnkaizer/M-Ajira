@@ -29,32 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
-        <com.facebook.shimmer.ShimmerFrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/shimmer"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <include layout="@layout/labour_item_shimmer">
-
-                </include>
-                <include layout="@layout/labour_item_shimmer">
-
-                </include>
-                <include layout="@layout/labour_item_shimmer">
-                </include>
-            </LinearLayout>
-        </com.facebook.shimmer.ShimmerFrameLayout>
-
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
@@ -66,7 +43,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shimmer" />
+            app:layout_constraintTop_toBottomOf="@+id/labourRvM" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/usersRvM"
@@ -74,33 +51,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
-        <com.facebook.shimmer.ShimmerFrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/shimmer1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <include layout="@layout/labourer_item_shimmer">
-
-                </include>
-                <include layout="@layout/labourer_item_shimmer">
-
-                </include>
-                <include layout="@layout/labourer_item_shimmer">
-                </include>
-            </LinearLayout>
-        </com.facebook.shimmer.ShimmerFrameLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
