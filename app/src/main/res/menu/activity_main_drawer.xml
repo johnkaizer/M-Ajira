@@ -24,5 +24,9 @@
             android:id="@+id/nav_profile"
             android:icon="@drawable/person_24"
             android:title="My Profile" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/handyman_24"
+            android:title="Manage My Details" />
     </group>
 </menu>

@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 import com.project.m_ajira.Adapters.LabourAdapter;
@@ -28,6 +29,7 @@ public class HomeFragment extends Fragment {
     RecyclerView labourRv, usersRv;
     private FragmentHomeBinding binding;
     ProgressBar progressBar;
+    ShimmerFrameLayout shimmerFrameLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -36,6 +38,8 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
         labourRv= root.findViewById(R.id.labourRv);
         progressBar=root.findViewById(R.id.progressBar2);
+        shimmerFrameLayout = root.findViewById(R.id.shimmer);
+        shimmerFrameLayout.startShimmer();
         LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
         layoutManager.setReverseLayout(true);
         labourRv.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
@@ -46,6 +50,9 @@ public class HomeFragment extends Fragment {
                 .build();
 
         labourAdapter = new LabourAdapter(context,getContext());
+        shimmerFrameLayout.stopShimmer();
+        shimmerFrameLayout.setVisibility(View.GONE);
+        labourRv.setVisibility(View.VISIBLE);
         labourRv.setAdapter(labourAdapter);
 
         //Users Profile

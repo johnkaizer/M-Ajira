@@ -2,8 +2,6 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-A
-gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
 X
@@ -34,3 +32,27 @@ e
 5app/src/main/java/com/project/m_ajira/Model/User.java,b\9\b9ddf77f2c15b8cf66df4b75342b397aa8f756b6
 w
 G.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35,b\f\bfb9453d49af9bc40f5f7a5f034be3c7ef8fa6bf
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+w
+G.idea/sonarlint/issuestore/b/f/bfb9453d49af9bc40f5f7a5f034be3c7ef8fa6bf,8\6\86e8db510ff6fc8d28a5e38849fe0e9eacae62ae
+u
+Eapp/src/main/java/com/project/m_ajira/Activities/DetailsActivity.java,2\b\2b6e7b62b3db55f270754b5f6cee103c99da52f9
+u
+Eapp/src/main/java/com/project/m_ajira/Activities/UserMoreDetails.java,4\b\4bb228be21d428bf30a76c87eaeac777a0817690
+l
+<app/src/main/java/com/project/m_ajira/Model/LabourModel.java,3\a\3a5dc7bc4ea8c5a1acc07d92a9b684051298ba63
+x
+Happ/src/main/java/com/project/m_ajira/Authentication/SignUpActivity.java,e\9\e9bc9764f892f0b2015c323f9011f5dc4eb448a4
+g
+7app/src/main/java/com/project/m_ajira/ui/jobs/Jobs.java,3\b\3b648568ca98f66eb90ff822bd40f01b0a4837d2
+q
+Aapp/src/main/java/com/project/m_ajira/Adapters/LabourAdapter.java,8\8\884dd709480ab9cdcc1d402c25ce52012a1fc8f5
+m
+=app/src/main/java/com/project/m_ajira/ui/profile/Profile.java,0\2\0239ba3b1707f4af63c11477d84697f04a84a6b8
+
+Oapp/src/main/java/com/project/m_ajira/Activities/OnboardingScreensActivity.java,c\0\c003a502db27350d71c3f78ad23582802896c6a9
+m
+=app/src/main/java/com/project/m_ajira/Model/ProfileModel.java,f\b\fbe9fef2bf85fce53c3c3b6d1cff899147c8c4e8
+p
+@app/src/main/java/com/project/m_ajira/Adapters/UsersAdapter.java,a\3\a330bb02c69252e1b0860a5f2ab1118d61478b8f

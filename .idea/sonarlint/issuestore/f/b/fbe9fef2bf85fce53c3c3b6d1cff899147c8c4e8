@@ -1,0 +1,16 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÎğšşÿÿÿÿ
+m	java:S116"SRename this field "ImageUrl" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅèÏ¿ÿÿÿÿÿ
+o	java:S116"SRename this field "UserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ŒÇ˜8¸ÈÈç0
+s	java:S116"RRename this field "UserDob" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ûğøÿÿÿÿ8ĞÙÅÈç0
+p	java:S116"TRename this field "UserPhone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óé˜8¨ËÆÈç0
+u	java:S116"TRename this field "UserEmail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«áñûÿÿÿÿ8––ÇÈç0
+o	java:S116	"SRename this field "UserHome" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ú§Ö8ù˜ÉÈç0
+q	java:S116
+"VRename this field "CurrentHome" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á»½
+8òÇÂÈç0
+m	java:S116"QRename this field "Gender" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒŸÙ8„ÍÄÈç0
+p	java:S116"TRename this field "Education" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿·Ÿ®8ĞÄÈç0
+q	java:S116"PRename this field "Skill" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ»Ñıúÿÿÿÿ8ìÖ¥ªç0
+u	java:S116"TRename this field "UserRates" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âñú’ûÿÿÿÿ8öíÉÈç0
+c	java:S107"BConstructor has 12 parameters, which is greater than 7 authorized.(š›¾Éÿÿÿÿÿ8Ì’ÌÈç0
