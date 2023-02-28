@@ -31,12 +31,10 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     LabourAdapter labourAdapter;
-    UsersAdapter usersAdapter;
     ArrayList<LabourModel>list;
-    ArrayList<ProfileModel>list1;
-    RecyclerView labourRv, usersRv;
+    RecyclerView labourRv;
     private FragmentHomeBinding binding;
-    ShimmerFrameLayout shimmerFrameLayout,shimmerFrameLayout1;
+    ShimmerFrameLayout shimmerFrameLayout;
     Query databaseReference;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -45,7 +43,6 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         labourRv= root.findViewById(R.id.labourRv);
-        usersRv= root.findViewById(R.id.usersRv);
         shimmerFrameLayout = root.findViewById(R.id.shimmer);
         shimmerFrameLayout.startShimmer();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("JobsPosted");
@@ -74,37 +71,6 @@ public class HomeFragment extends Fragment {
 
             }
         });
-        ////USERS
-        shimmerFrameLayout1 = root.findViewById(R.id.shimmer1);
-        shimmerFrameLayout1.startShimmer();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("UserProfiles");
-        usersRv.setHasFixedSize(true);
-        usersRv.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.VERTICAL, false));
-        list1 = new ArrayList<>();
-        usersAdapter = new UsersAdapter(getContext(), list1);
-        usersRv.setAdapter(usersAdapter);
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-
-                    ProfileModel profileModel= dataSnapshot.getValue(ProfileModel.class);
-                    list1.add(profileModel);
-                }
-                shimmerFrameLayout1.stopShimmer();
-                shimmerFrameLayout1.setVisibility(View.GONE);
-                usersRv.setVisibility(View.VISIBLE);
-                usersAdapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-
-            }
-        });
-
-
         return root;
     }
 

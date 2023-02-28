@@ -15,6 +15,7 @@ import android.util.Patterns;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -25,6 +26,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.project.m_ajira.Activities.MainActivity;
+import com.project.m_ajira.Employer.EmployerActivity;
 import com.project.m_ajira.R;
 
 public class SignInActivity extends AppCompatActivity {
@@ -36,6 +38,7 @@ public class SignInActivity extends AppCompatActivity {
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
     Button loginBtn;
+    CheckBox employer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,7 @@ public class SignInActivity extends AppCompatActivity {
         EditTextEmail = findViewById(R.id.editText2);
         EditTextPassword = findViewById(R.id.editText3);
         progressBar = findViewById(R.id.progressBar2);
+        employer =findViewById(R.id.checkBox);
         preferences = getSharedPreferences("MyPreferences",MODE_PRIVATE);
         editor = preferences.edit();
         if (preferences.contains("saved_email")){
@@ -81,12 +85,18 @@ public class SignInActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                                 if (mAuth.getCurrentUser().isEmailVerified()) {
-                                    editor.putString("saved_email", email);
-                                    editor.putString("saved_pass", password);
-                                    editor.commit();
-                                    startActivity(new Intent(SignInActivity.this, MainActivity.class));
-                                    Toast.makeText(SignInActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-                                    finish();
+//                                    editor.putString("saved_email", email);
+//                                    editor.putString("saved_pass", password);
+//                                    editor.commit();
+                                    if (employer.isChecked()) {
+                                        startActivity(new Intent(SignInActivity.this, EmployerActivity.class));
+                                        Toast.makeText(SignInActivity.this, "Logged in successfully as employer", Toast.LENGTH_SHORT).show();
+                                        finish();
+                                    }else {
+                                        startActivity(new Intent(SignInActivity.this, MainActivity.class));
+                                        Toast.makeText(SignInActivity.this, "Logged in successfully as job seeker", Toast.LENGTH_SHORT).show();
+                                        finish();
+                                    }
                                 } else {
                                     Toast.makeText(SignInActivity.this, "Please verify your email", Toast.LENGTH_SHORT).show();
                                 }

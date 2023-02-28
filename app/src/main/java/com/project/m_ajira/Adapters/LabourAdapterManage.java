@@ -27,7 +27,7 @@ public class LabourAdapterManage extends FirebaseRecyclerAdapter<LabourModel, La
 
         holder.dateC.setText(model.getDateCreated());
         holder.rates.setText(model.getRate());
-        holder.title.setText(model.getTile());
+        holder.title.setText(model.getTitle());
         holder.location.setText(model.getPlace());
 
     }

@@ -1,10 +1,11 @@
 package com.project.m_ajira.Model;
 
 public class LabourModel {
-    String Tile;
+    String Title;
     String Description;
     String rate;
     String owner;
+    String ownerEmail;
     String ownerPhone;
     String ownerId;
     String place;
@@ -16,26 +17,26 @@ public class LabourModel {
 
     //Constructor
 
-    public LabourModel(String tile, String description, String rate, String owner, String ownerPhone, String ownerId, String place, String dateCreated) {
-        Tile = tile;
+    public LabourModel(String title, String description, String rate, String owner, String ownerEmail, String ownerPhone, String ownerId, String place, String dateCreated) {
+        Title = title;
         Description = description;
         this.rate = rate;
         this.owner = owner;
+        this.ownerEmail = ownerEmail;
         this.ownerPhone = ownerPhone;
         this.ownerId = ownerId;
         this.place = place;
         this.dateCreated = dateCreated;
     }
-
     //getters and setters methods
 
 
-    public String getTile() {
-        return Tile;
+    public String getTitle() {
+        return Title;
     }
 
-    public void setTile(String tile) {
-        Tile = tile;
+    public void setTitle(String title) {
+        Title = title;
     }
 
     public String getDescription() {
@@ -60,6 +61,14 @@ public class LabourModel {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    public String getOwnerEmail() {
+        return ownerEmail;
+    }
+
+    public void setOwnerEmail(String ownerEmail) {
+        this.ownerEmail = ownerEmail;
     }
 
     public String getOwnerPhone() {

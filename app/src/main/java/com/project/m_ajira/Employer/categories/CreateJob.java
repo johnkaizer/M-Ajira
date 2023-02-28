@@ -1,14 +1,11 @@
-package com.project.m_ajira.ui.jobs;
+package com.project.m_ajira.Employer.categories;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -23,14 +20,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.project.m_ajira.Activities.MainActivity;
 import com.project.m_ajira.Model.LabourModel;
 import com.project.m_ajira.R;
-import com.project.m_ajira.databinding.FragmentJobsBinding;
 
 import java.text.DateFormat;
 import java.util.Calendar;
 
-public class Jobs extends Fragment {
-
-   FragmentJobsBinding binding;
+public class CreateJob extends AppCompatActivity {
     EditText nameEt,phoneEt,ratesEt,roleEt,locationEt;
     Spinner titleSpinner;
     AppCompatButton submit;
@@ -40,29 +34,29 @@ public class Jobs extends Fragment {
     DatabaseReference reference;
     DatabaseReference dataRef;
     String userID;
+    String userEmail;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        binding = FragmentJobsBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_create_job);
         //Edit texts
-        nameEt = root.findViewById(R.id.owner);
-        phoneEt = root.findViewById(R.id.phone);
-        ratesEt = root.findViewById(R.id.rates);
-        roleEt = root.findViewById(R.id.description);
-        locationEt = root.findViewById(R.id.location);
+        nameEt = findViewById(R.id.owner);
+        phoneEt = findViewById(R.id.phone);
+        ratesEt = findViewById(R.id.rates);
+        roleEt = findViewById(R.id.description);
+        locationEt = findViewById(R.id.location);
         //Spinner
-        titleSpinner = root.findViewById(R.id.title_spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext() ,R.array.jobs, android.R.layout.simple_spinner_item);
+        titleSpinner = findViewById(R.id.title_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this ,R.array.jobs, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         titleSpinner.setAdapter(adapter);
         //submit btn
-        submit = root.findViewById(R.id.appCompatButton2);
+        submit = findViewById(R.id.appCompatButton2);
         //loading progress bar
-        progressBar = root.findViewById(R.id.progressBar1);
+        progressBar =findViewById(R.id.progressBar1);
         //Today's Date textview
-        tDate = root.findViewById(R.id.textView9);
+        tDate = findViewById(R.id.textView9);
         Calendar calendar = Calendar.getInstance();
         String currentDate = DateFormat.getDateInstance().format(calendar.getTime());
         tDate.setText(currentDate);
@@ -72,6 +66,7 @@ public class Jobs extends Fragment {
         //Getting logged in user ID
         user = FirebaseAuth.getInstance().getCurrentUser();
         userID = user.getUid();
+        userEmail = user.getEmail();
 
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +75,6 @@ public class Jobs extends Fragment {
                 saveData();
             }
         });
-        return root;
     }
 
     private void saveData() {
@@ -90,13 +84,15 @@ public class Jobs extends Fragment {
         String Owner =nameEt.getText().toString();
         String OwnerPhone =phoneEt.getText().toString();
         String OwnerId =userID;
+        String OwnerEmail = userEmail;
         String Place =locationEt.getText().toString();
         String Created =tDate.getText().toString();
 
-        LabourModel labourModel = new LabourModel(Title,Description,Rates,Owner,OwnerPhone,OwnerId,Place,Created);
+        LabourModel labourModel = new LabourModel(Title,Description,Rates,Owner,OwnerEmail,OwnerPhone,OwnerId,Place,Created);
         dataRef.push().setValue(labourModel);
-        Toast.makeText(getContext(),"Successfully created job post",Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(getContext(), MainActivity.class);
+        Toast.makeText(this,"Successfully created job post",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, ManageJob.class);
         startActivity(intent);
     }
+
 }

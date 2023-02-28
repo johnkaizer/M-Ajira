@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="230dp"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="20dp"
@@ -15,10 +15,10 @@
 
         <ImageView
             android:id="@+id/labour_icon"
-            android:layout_width="120dp"
-            android:layout_height="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/person_24"
+            android:src="@drawable/lady"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Rates:"
+            android:text="You have sent an application for this role asking: "
             android:textColor="@color/blueish"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/speciality_txt" />
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Name:"
+            android:text="Your Name:"
             android:textColor="@color/blueish"
             app:layout_constraintStart_toStartOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Phone:"
+            android:text="Your Phone:"
             android:textColor="@color/blueish"
             app:layout_constraintStart_toStartOf="@+id/textView15"
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
@@ -100,36 +100,19 @@
             app:layout_constraintTop_toTopOf="@+id/textView19" />
 
         <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="4dp"
-            android:text="Current Location:"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/jomolhari"
+            android:text="You have submitted an application await response from the jobs owner and keep checking the accepted window"
             android:textColor="@color/blueish"
-            app:layout_constraintStart_toStartOf="@+id/textView19"
-            app:layout_constraintTop_toBottomOf="@+id/textView19" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
-            android:text="Kakamega"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/textView21"
-            app:layout_constraintStart_toEndOf="@+id/textView21"
-            app:layout_constraintTop_toTopOf="@+id/textView21" />
-
-        <ImageButton
-            android:id="@+id/more"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:src="@drawable/more_24"
-            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

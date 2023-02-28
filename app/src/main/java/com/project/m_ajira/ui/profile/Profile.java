@@ -30,7 +30,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.project.m_ajira.Activities.MainActivity;
 import com.project.m_ajira.R;
-import com.project.m_ajira.databinding.FragmentJobsBinding;
 import com.project.m_ajira.databinding.FragmentProfileBinding;
 
 import java.util.HashMap;

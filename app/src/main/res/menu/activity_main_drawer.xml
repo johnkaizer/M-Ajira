@@ -11,22 +11,14 @@
         <item
             android:id="@+id/nav_messages"
             android:icon="@drawable/message_24"
-            android:title="Messages" />
+            android:title="Applications" />
         <item
             android:id="@+id/nav_bookings"
             android:icon="@drawable/add_task_24"
-            android:title="Bookings" />
-        <item
-            android:id="@+id/nav_task"
-            android:icon="@drawable/chart_24"
-            android:title="Create Task" />
+            android:title="Accepted" />
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/person_24"
             android:title="My Profile" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/handyman_24"
-            android:title="Manage My Details" />
     </group>
 </menu>

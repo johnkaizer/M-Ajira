@@ -46,4 +46,5 @@
         <item>Pet Groomer</item>
         <item>Caretaker</item>
     </string-array>
+    <string name="title_activity_employer">EmployerActivity</string>
 </resources>
