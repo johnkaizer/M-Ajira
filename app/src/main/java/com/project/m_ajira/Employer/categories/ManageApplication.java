@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,11 +23,14 @@ public class ManageApplication extends AppCompatActivity {
     String userIdentity;
     private FirebaseUser user;
     DatabaseReference reference;
+    ShimmerFrameLayout shimmerFrameLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_application);
         jobRecycler =findViewById(R.id.jobsRv);
+        shimmerFrameLayout = findViewById(R.id.shimmer);
+        shimmerFrameLayout.startShimmer();
         reference = FirebaseDatabase.getInstance().getReference("Users");
         //Getting logged in user ID
         user = FirebaseAuth.getInstance().getCurrentUser();
@@ -39,12 +44,16 @@ public class ManageApplication extends AppCompatActivity {
                 .build();
 
         manageApplicationAdapter = new ManageApplicationAdapter(context,this);
+
         jobRecycler.setAdapter(manageApplicationAdapter);
 
     }
     @Override
     public void onStart() {
         super.onStart();
+        shimmerFrameLayout.stopShimmer();
+        shimmerFrameLayout.setVisibility(View.GONE);
+        jobRecycler.setVisibility(View.VISIBLE);
         manageApplicationAdapter.startListening();
     }
     @Override

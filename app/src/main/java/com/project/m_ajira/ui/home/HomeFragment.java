@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment {
         shimmerFrameLayout.startShimmer();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("JobsPosted");
         labourRv.setHasFixedSize(true);
-        labourRv.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL, false));
+        labourRv.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.VERTICAL, false));
         list = new ArrayList<>();
         labourAdapter = new LabourAdapter(getContext(), list);
         labourRv.setAdapter(labourAdapter);

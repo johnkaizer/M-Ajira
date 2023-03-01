@@ -7,18 +7,20 @@
     tools:context=".Activities.ProfileActivity"
     android:background="@color/white"
     android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/jomolhari"
         android:text="Name:"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/cust_name"
@@ -26,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:fontFamily="@font/jomolhari"
-        android:textColor="@color/black"
+        android:textColor="@color/blueish"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
@@ -52,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:fontFamily="@font/jomolhari"
-        android:textColor="@color/black"
+        android:textColor="@color/blueish"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView19"
@@ -78,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:fontFamily="@font/jomolhari"
-        android:textColor="@color/black"
+        android:textColor="@color/blueish"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
@@ -104,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:fontFamily="@font/jomolhari"
-        android:textColor="@color/black"
+        android:textColor="@color/blueish"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
