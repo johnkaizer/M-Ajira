@@ -1,0 +1,14 @@
+
+C
+java:S16048"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ
+>
+java:S16040"(Make this anonymous inner class a lambda(»ä”ö
+>
+java:S1604+"(Make this anonymous inner class a lambda(¨İü¿
+f
+java:S13013"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(úï˜¿ùÿÿÿÿ
+f	java:S1284"LEnd this switch case with an unconditional break, return or throw statement.(…ÉÍóÿÿÿÿÿ
+<	java:S1313""Add a default case to this switch.(øå´¡ÿÿÿÿÿ
+]
+java:S1659S"BDeclare "rates" and all following declarations on a separate line.(Õñ…¦øÿÿÿÿ

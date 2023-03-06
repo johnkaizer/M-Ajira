@@ -1,0 +1,20 @@
+
+>
+java:S1604#"(Make this anonymous inner class a lambda(Å —
+C
+java:S1604*"(Make this anonymous inner class a lambda(ê­êâşÿÿÿÿ
+>
+java:S16041"(Make this anonymous inner class a lambda(ğ—–ƒ
+C
+java:S16048"(Make this anonymous inner class a lambda(÷’şúÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ııÌõûÿÿÿÿ
+]
+java:S1659"BDeclare "card2" and all following declarations on a separate line.(ãœ‡°şÿÿÿÿ
+o
+java:S1450"TRemove the "card1" field and declare it as a local variable in the relevant methods.(ãœ‡°şÿÿÿÿ
+o
+java:S1450"TRemove the "card2" field and declare it as a local variable in the relevant methods.(ãœ‡°şÿÿÿÿ
+o
+java:S1450"TRemove the "card3" field and declare it as a local variable in the relevant methods.(ãœ‡°şÿÿÿÿ
+o
+java:S1450"TRemove the "card4" field and declare it as a local variable in the relevant methods.(ãœ‡°şÿÿÿÿ

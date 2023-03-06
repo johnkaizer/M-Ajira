@@ -1,0 +1,36 @@
+
+F
+java:S3740‰"/Provide the parametrized type for this generic.(‹Ž¤·
+F
+java:S3740‰"/Provide the parametrized type for this generic.(‹Ž¤·
+>
+java:S1604Z"(Make this anonymous inner class a lambda(‰äÕ
+C
+java:S1604p"(Make this anonymous inner class a lambda(¹ý¬Ëþÿÿÿÿ
+D
+java:S1604—"(Make this anonymous inner class a lambda(‹ŠòÍúÿÿÿÿ
+?
+java:S1604†"(Make this anonymous inner class a lambda(ê×™›
+D
+java:S1604ƒ"(Make this anonymous inner class a lambda(ëŒ¿±þÿÿÿÿ
+D
+java:S1604«"(Make this anonymous inner class a lambda( ú±³úÿÿÿÿ
+^
+java:S2184®"BCast one of the operands of this division operation to a "double".(½ýáÏúÿÿÿÿ
+_
+java:S1659'"DDeclare "phoneEt" and all following declarations on a separate line.(¿Ûû£øÿÿÿÿ
+F
+java:S1659)"+Declare "skillsSpinner" on a separate line.(ö¢’öùÿÿÿÿ
+B
+java:S1659*"'Declare "uploadBtn" on a separate line.(÷Çº¥þÿÿÿÿ
+n
+java:S1450,"SRemove the "user" field and declare it as a local variable in the relevant methods.(š·àŽûÿÿÿÿ
+Q	java:S107"=Method has 11 parameters, which is greater than 7 authorized.(ò°†b
+=
+java:S1125i"'Remove the unnecessary boolean literal.(×ôÌ›
+T
+java:S1874v">Remove this use of "startActivityForResult"; it is deprecated.(ÏÍÖ„
+f
+java:S1874¶"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(™­²©ùÿÿÿÿ
+T
+java:S1874·"8Remove this use of "onActivityResult"; it is deprecated.(Žß¬©úÿÿÿÿ

@@ -1,0 +1,17 @@
+
+e	java:S117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥óýT
+k	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬òÚµúÿÿÿÿ
+k	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â’”±úÿÿÿÿ
+f	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿâ€¶
+e	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷çÞ
+k	java:S117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§œÚÑøÿÿÿÿ
+f	java:S117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Ü·¼
+k	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¦æ¾üÿÿÿÿ
+f	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å·áÅ
+>
+java:S1604H"(Make this anonymous inner class a lambda(±Ä­”
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÃšãØ
+_
+java:S1659"DDeclare "phoneEt" and all following declarations on a separate line.(¿»ÓËÿÿÿÿÿ
+n
+java:S1450!"SRemove the "user" field and declare it as a local variable in the relevant methods.(š·àŽûÿÿÿÿ

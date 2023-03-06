@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÎğšşÿÿÿÿ
+q	java:S116"PRename this field "Title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü´×ÿÿÿÿÿ8ığâµé0
+w	java:S116"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°±šúÿÿÿÿ8ñªÅæ0
+]	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(³„ÿù8£”óµé0

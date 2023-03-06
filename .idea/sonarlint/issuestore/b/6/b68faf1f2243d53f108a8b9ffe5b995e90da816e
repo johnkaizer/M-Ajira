@@ -1,0 +1,17 @@
+
+r	java:S117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú‹€äıÿÿÿÿ8†Üòßé0
+J
+java:S16048"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ8Š‚íßé0
+J
+java:S16042"(Make this anonymous inner class a lambda(ÃÃÁÃøÿÿÿÿ8”Áêßé0
+J
+java:S1604m"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ8‰Üòßé0
+E
+java:S1604_"(Make this anonymous inner class a lambda(¼Â¥Â8åÿïßé0
+J
+java:S1604B"(Make this anonymous inner class a lambda(è©€ªşÿÿÿÿ8ŠÜòßé0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(úï˜¿ùÿÿÿÿ
+^
+java:S1659†"BDeclare "rates" and all following declarations on a separate line.(–ªÎöúÿÿÿÿ
+J
+java:S1659‡"'Declare "deleteBtn" on a separate line.(•Øğûÿÿÿÿ8Ôûçßé0

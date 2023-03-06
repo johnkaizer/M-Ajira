@@ -1,0 +1,21 @@
+
+e	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¤‡
+f	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùéÙñ
+k	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úßúçÿÿÿÿÿ
+k	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æå­¨øÿÿÿÿ
+e	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÔÇ
+C
+java:S16042"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ
+C
+java:S1604,"(Make this anonymous inner class a lambda(ï”æúıÿÿÿÿ
+J
+java:S1604I"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ8ŒÁ÷Ëé0
+>
+java:S1604:"(Make this anonymous inner class a lambda(æ¤éù
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(úï˜¿ùÿÿÿÿ
+£
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²óÀÚÿÿÿÿÿ8ñŒøËé0
+\
+java:S1659\"ADeclare "rate" and all following declarations on a separate line.(¨çúÿÿÿÿ
+;
+java:S1659]"%Declare "denyBtn" on a separate line.(ÅÎŞ

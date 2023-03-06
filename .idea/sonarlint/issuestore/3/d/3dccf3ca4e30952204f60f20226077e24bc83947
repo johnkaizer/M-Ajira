@@ -1,0 +1,31 @@
+
+Q
+java:S1066x"/Merge this if statement with the enclosing one.(ÊÈâ“üÿÿÿÿ8”Ã¹é0
+C
+java:S1604R"(Make this anonymous inner class a lambda(ü»×¬ıÿÿÿÿ
+C
+java:S1604<"(Make this anonymous inner class a lambda(ïËà¤ÿÿÿÿÿ
+J
+java:S1604s"(Make this anonymous inner class a lambda(ñİşÿÿÿÿ8–Ã¹é0
+F
+java:S1604«"(Make this anonymous inner class a lambda(’¿Î8–Ã¹é0
+K
+java:S1604£"(Make this anonymous inner class a lambda(Ÿ¼êÒüÿÿÿÿ8–Ã¹é0
+K
+java:S1604¸"(Make this anonymous inner class a lambda(¼ó÷Çøÿÿÿÿ8—Ã¹é0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(À÷„…úÿÿÿÿ
+r	java:S116""XRename this field "EditTextEmail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úâ„§şÿÿÿÿ
+u	java:S116""[Rename this field "EditTextPassword" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úâ„§şÿÿÿÿ
+I
+java:S1659"".Declare "EditTextPassword" on a separate line.(úâ„§şÿÿÿÿ
+m
+java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(¨Œşÿÿÿÿ
+N
+java:S1854V"8Remove this useless assignment to local variable "user".(—ÓÛ
+?
+java:S1481V")Remove this unused "user" local variable.(—ÓÛ
+]	java:S125X"<This block of commented-out lines of code should be removed.(¼ğ‘úÿÿÿÿ8ûÃ¹é0
+I
+java:S1172“"+Remove this unused method parameter "view".(ÈãÁ•8€ŸÃ¹é0
+I
+java:S1172š"+Remove this unused method parameter "view".(ÂÇøÙ8ŸÃ¹é0

@@ -1,0 +1,4 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÃšãØ
+u
+java:S1450"SRemove the "user" field and declare it as a local variable in the relevant methods.(š·àûÿÿÿÿ8ë½ÈÈé0

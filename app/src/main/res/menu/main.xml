@@ -16,5 +16,10 @@
         android:orderInCategory="100"
         android:title="About"
         app:showAsAction="never" />
+    <item android:id="@+id/search_item"
+        android:icon="@drawable/search_24"
+        android:title="Search Donations"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"/>
 
 </menu>

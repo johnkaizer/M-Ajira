@@ -1,0 +1,7 @@
+
+u
+java:S1450$"SRemove the "user" field and declare it as a local variable in the relevant methods.(š·àûÿÿÿÿ8È¸é0
+\
+java:S1161'":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8­ƒ¸é0
+
+java:S1186C"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô°¤¦8Ö¸é0
